@@ -570,7 +570,7 @@ namespace wdasm
 			{
 				if (Data.ToCharArray(i,1)[0] == '\n')
 				{
-					Lines[LineCounter] = Data.Substring(oldnewlinepos, i - oldnewlinepos - 1);
+					Lines[LineCounter] = Data.Substring(oldnewlinepos, i - oldnewlinepos);
 					oldnewlinepos = i + 1;
 					LineCounter++;
 				}
